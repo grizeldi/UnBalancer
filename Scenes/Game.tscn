@@ -38,7 +38,7 @@ collision_mask = 0
 shape = SubResource( 2 )
 
 [node name="Camera" type="Camera" parent="."]
-transform = Transform( 1, 0, 0, 0, 0.989475, 0.144702, 0, -0.144702, 0.989475, 0, 1.15376, 2.72921 )
+transform = Transform( 1, 0, 0, 0, 0.996811, 0.0797992, 0, -0.0797992, 0.996811, 0, 1.15376, 2.72921 )
 fov = 60.0
 
 [node name="env" parent="." instance=ExtResource( 1 )]
