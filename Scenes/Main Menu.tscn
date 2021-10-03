@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Models/Env/env.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scripts/MainMenuButton.gd" type="Script" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://Scenes/Levels/lv2.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Scenes/Levels/lv3.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Scenes/Levels/lv4.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Scenes/Levels/lv5.tscn" type="PackedScene" id=8]
 
 [sub_resource type="PlaneMesh" id=1]
 
@@ -97,6 +98,14 @@ text = "4"
 script = ExtResource( 2 )
 level_to_load = ExtResource( 7 )
 
+[node name="Button5" type="Button" parent="UI/CenterContainer/VBoxContainer/HBoxContainer"]
+margin_left = 96.0
+margin_right = 116.0
+margin_bottom = 20.0
+text = "5"
+script = ExtResource( 2 )
+level_to_load = ExtResource( 8 )
+
 [node name="Title" type="Label" parent="UI"]
 anchor_left = 0.5
 anchor_right = 0.5
@@ -114,3 +123,4 @@ __meta__ = {
 [connection signal="pressed" from="UI/CenterContainer/VBoxContainer/HBoxContainer/Button2" to="UI/CenterContainer/VBoxContainer/HBoxContainer/Button2" method="_on_Button_pressed"]
 [connection signal="pressed" from="UI/CenterContainer/VBoxContainer/HBoxContainer/Button3" to="UI/CenterContainer/VBoxContainer/HBoxContainer/Button3" method="_on_Button_pressed"]
 [connection signal="pressed" from="UI/CenterContainer/VBoxContainer/HBoxContainer/Button4" to="UI/CenterContainer/VBoxContainer/HBoxContainer/Button4" method="_on_Button_pressed"]
+[connection signal="pressed" from="UI/CenterContainer/VBoxContainer/HBoxContainer/Button5" to="UI/CenterContainer/VBoxContainer/HBoxContainer/Button5" method="_on_Button_pressed"]

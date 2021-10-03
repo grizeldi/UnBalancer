@@ -27,12 +27,16 @@ _global_script_class_icons={
 [application]
 
 config/name="UnBalancer"
+config/description="A simple balancing puzzle game."
 run/main_scene="res://Scenes/Main Menu.tscn"
+boot_splash/image="res://griziconV3.png"
+boot_splash/fullsize=false
+boot_splash/bg_color=Color( 0.117647, 0.117647, 0.117647, 1 )
 config/icon="res://icon.png"
 
 [audio]
 
-default_bus_layout=""
+default_bus_layout="res://Audio/default_bus_layout.tres"
 
 [autoload]
 
